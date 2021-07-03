@@ -1,0 +1,45 @@
+{
+  "name": "leah-ts",
+  "version": "1.0.1",
+  "description": "Leah's TypeScript boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "run": "node out/index.js",
+    "lint": "eslint src/**/*.ts",
+    "fix": "eslint src/**/*.ts --fix",
+    "build": "npm run lint && npm run tsc",
+    "start": "npm run build && npm run run"
+  },
+  "_moduleAliases": {
+    "~": "./out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leahlundqvist/ts.git"
+  },
+  "author": "Leah Lundqvist",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leahlundqvist/ts/issues"
+  },
+  "homepage": "https://github.com/leahlundqvist/ts#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.40",
+    "@types/node-fetch": "^2.5.10",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.24.0",
+    "eslint-config-standard-with-typescript": "^20.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "hot-shots": "^8.3.1",
+    "module-alias": "^2.2.2",
+    "node-fetch": "^2.6.1",
+    "ololog": "^1.1.175"
+  }
+}
